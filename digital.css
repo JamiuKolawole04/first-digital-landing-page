@@ -1,0 +1,727 @@
+@charset 'utf-8';
+
+:root {
+    --white-color : white;
+    --transition : all .4s ease-in-out;
+}
+
+*::before,
+*::after, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+body, 
+html,
+main {
+    overflow-x: hidden;
+}
+ 
+header {
+    background: #1f4ace;  
+    padding: 0 40px 40px 75px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.center-items {
+    align-items: center;
+}
+li {
+    list-style-type: none;
+}
+
+nav#horizontal__links { 
+    margin-left: 128px 
+}
+
+nav#horizontal__links ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+nav#hrizontal__links ul li a,
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+img.last-logo {
+    width: 120px;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown__content {
+    position:absolute;
+    display:none;
+    background-color:black;
+    width: max-content;
+    padding: 4px;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.dropdown__content   a{
+    padding:10px 8px;
+    color: var(--white-color);
+    display:block;
+    text-decoration:none;
+    font-size:12px;
+
+}
+.dropdown__content a {
+    display: block;
+}
+.dropdown__content a:hover{
+    background-color:hsla(90, 50%, 100%, 0.7);
+    border-radius: 20px;
+
+} 
+
+.dropdown:hover .dropdown__content{
+    display:block;
+}
+/* 
+.dropdown:hover .dropbtn{
+    color:darkgreen;
+}
+ */
+.auto { 
+    margin-left: auto;
+}
+.account-btn {
+    font-size: 12px;
+    color: white;
+    background: #f88419;
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #f88419;
+    transition: var(--transition);
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.account-btn:hover {
+    opacity: 0.8;
+}
+
+.top-header__section {
+    padding: 52px 140px 0 92px;
+}
+
+.top-header__section h1 {
+    color: var(--white-color);
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.top-header__section p{
+    color: var(--white-color);
+    line-height: 24px;
+    margin-top: 8px;
+}
+.img__wrapper img{
+    height: 450px;
+    width:380px;
+}
+.icon--section {
+    position: fixed;
+    background: #0f0f10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3; 
+    padding: 12px 0; 
+    
+}
+.mobile__header {
+    background: #0f0f10;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 98px;
+    border-top-right-radius: 45px;
+   
+}
+
+.sidenav a {
+    padding: 16px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: blue;
+    display: block;
+    transition: 0.3s;
+}
+/* 
+.sidenav:hover {
+   padding: 60px 0 0 10px;
+}
+
+*/
+
+.sidenav a:hover {
+    background: #f1f1f1;
+    border-radius: 45px;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 4px;
+    right: 48px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (min-width: 1240px) {
+    .mobile-view {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1239.98px) {
+    .desktop-menu {
+        display: none !important;
+    }
+}
+
+.we-do-page {
+    padding: 100px 250px 100px 250px;
+}
+
+.we-do-page h2,  
+.serve__text {
+    font-size: 40px;
+}
+
+.we-do-page h2 {
+    margin-top: -10px;
+}
+
+.we-do-page p.we-do-page__par1{
+    font-size: 13px;
+    color: #262627;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p.img-par2 {
+    font-size: 12px;
+    color: #343435;
+}
+
+.box__page,
+.tokenization__container,
+section#bit__pension,
+section#lending,
+section#client__portal,
+footer {
+    padding: 0 180px  0 167px;
+}
+.box__wrapper1 {
+    margin-top: 56px;
+}
+.box__wrapper2 {
+    margin-top: 32px;
+}
+.box__wrapper3 {
+    margin-top: 180px;
+    margin-left: 25px;
+}
+.box__wrapper4 {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.box__wrapper5 {
+    margin-top: 100px;
+    margin-left: 25px;
+}
+.box__wrapper6 {
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.box__wrapper1,
+.box__wrapper2,
+.box__wrapper3,
+.box__wrapper4,
+.box__wrapper5,
+.box__wrapper6
+{
+    background: white;
+    padding: 10px 35px 0 10px;
+    width: 260px;
+    height: 180px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px 2px grey;
+}
+
+@media screen and (max-width: 320px) {
+    .box__wrapper1,
+    .box__wrapper2,
+    .box__wrapper3,
+    .box__wrapper4,
+    .box__wrapper5,
+    .box__wrapper6  {
+        width: 200px;
+        height: 200px; 
+    }
+}
+
+.serve__text {
+    font-size: 40px;
+}
+.serve__subtext {
+    font-size: 12px;
+    color: #262627;
+    margin-top: -20px;
+    line-height: 20px;
+}
+
+section#services {
+    margin-top: 120px;
+}
+
+section#services h2, 
+.tokenization__container h2,
+section#lending h2,
+section#client__portal h2{
+   font-size: 44px;
+   line-height: 44px;
+}
+
+section#services p {
+    font-size: 20px;
+    color: #343435;
+    line-height: 30px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+img.token_img {
+    width: 420px;
+}
+
+.tokenization__container {
+    margin-top: 52px;
+    margin-bottom: 92px;
+}
+
+.learn-more-btn {
+    color: white;
+    background: #003fff;
+    border: 1px solid #003fff;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    width: 120px;
+    margin-top: 24px;
+    transition: var(--transition);
+}
+
+.learn-more-btn:hover {
+    opacity: 0.7;
+}
+
+.tokenization__container p {
+    margin-top: -10px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #343435;
+}
+
+h2.abacus {
+    margin-right: 68px;
+}
+img.transfer_img {
+    width: 500px;
+    margin-left: -16px;
+}
+
+.mt-68 {
+    margin-top: 68px;
+}
+
+section#bit__pension {
+    background: #06184f;
+    padding-top: 170px;
+    padding-bottom: 140px;
+    width: 42%;
+    border: 1px solid #06184f;
+}
+
+section#bit__pension h2 {
+    color: white;
+    font-size: 40px;
+}
+
+section#bit__pension p {
+    color: #e1e3ea;
+    font-size: 12px;
+    margin-top: -10px;
+    font-weight: 200;
+    line-height:18px;
+}
+
+.positioned__img {
+    position: relative;
+}
+
+img.position__img {
+    position: absolute;
+    left: 590px;
+    top: -300px;
+}
+
+section#lending :first-child {
+    width: 420px;
+}
+
+section#lending h2 {
+    margin-top: 85px;
+}
+
+section#lending p {
+    font-size: 14px;
+    color: #343435;
+    margin-top: -20px;
+    line-height: 20px;
+}
+
+.coming-soon-btn {
+    font-weight: 900;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #f6f7fa;
+    background: #343435;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: var(--transition);
+}
+.coming-soon-btn:hover a {
+   color: #343435;
+}
+.coming-soon-btn:hover  {
+    background: transparent;
+    /* color: #343435; */
+}
+
+/* .coming-soon-btn:hover, */
+button.send-message-btn:hover {
+    opacity: 0.7;
+}
+
+section#client__portal {
+    padding-top: 76px;
+}
+
+img.demo-img {
+    width: 600px;
+    height: 350px;
+}
+
+p.secure {
+    margin-top: -25px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
+p.built-in {
+    font-size: 12px;
+    margin-left: 40px;
+    line-height: 16px;
+    margin-top: -8px;
+}
+
+img.plus_logo {
+    margin-top: 20px;
+}
+
+img.plus_logo2 {
+    margin-top: 20px;
+}
+
+img.plus_logo3 {
+    margin-top: 50px;
+}
+
+section#expert__message {
+    background: #1f4ace;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 80px;
+}
+
+section#expert__message h2 {
+    font-size: 36px;
+    color: var(--white-color);
+}
+
+section#expert__message p {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button.send-message-btn {
+    padding: 10px;
+    background: #f88419;
+    border: 1px solid #f88419;
+    color: white;
+    border-radius: 3px;
+    margin-top: 18px;
+    width: 150px;
+    transition: var(--transition);
+}
+
+footer {
+    background: #0f0f10;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+input[type=email] {
+    background: #272728;
+    padding: 12px;
+    width: 280px;
+    outline: none;
+    color: white;
+    margin-top: 40px;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f88419;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+}
+
+.sub-para {
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.flex-start {
+    display: flex;
+    margin-right: 112px;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+
+.ft-small-div2 {
+    background: white;
+    width: 6px;
+    height: 6px;
+    margin-top: 28px;
+}
+
+p.ft-par2,
+nav.footer__links ul li a  {
+    color: #525253;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+nav.footer__links {
+    margin-left: -40px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.sm-copyright {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767.98px) {
+    header,
+    .we-do-page,
+    .box__page,
+    .tokenization__container,
+    section#bit__pension,
+    section#lending,
+    section#client__portal,
+    footer {
+        padding: 32px 12px 12px 12px;
+    }
+
+    .img__wrapper {
+        display: none;
+    }
+
+    .top-header__section {
+        padding: 20px 0 0 0;
+    }
+
+    .sm {
+        flex-direction: column;
+    }
+
+    .sm-mt-20 {
+        margin-top: 20px;
+    }
+
+/*  
+    .box__wrapper1,
+    .box__wrapper2,
+    .box__wrapper3,
+    .box__wrapper4,
+    .box__wrapper5,
+    .box__wrapper6  {
+        width: 80%; 
+    }
+
+    */
+
+    .box__wrapper3,
+    .box__wrapper4,
+    .box__wrapper5,
+    .box__wrapper6 {
+        margin-left: 0;
+        margin-top: 32px;
+    }
+
+    img.token_img,
+    img.finance_img,
+    img.demo-img {
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    img.transfer_img {
+        width: 100%;
+    }
+
+    .financeApi__page {
+        margin-top: 4px !important;
+    }
+
+    section#bit__pension {
+        width: 100%;
+    }
+
+    section#bit__pension div.positioned__img img {
+        display: none !important;
+    }
+
+    section#lending :first-child {
+        width: 100%;
+    }
+
+    .sm-copyright {
+        display: block;
+    }
+    .xl-copyright {
+    display: none;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767.98px) {
+
+    .box__page,
+    .we-do-page,
+    .tokenization__container,
+    section#bit__pension,
+    section#lending,
+    footer {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .ft-small-div2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 978.98px) {
+    .box__wrapper1,
+    .box__wrapper2,
+    .box__wrapper3,
+    .box__wrapper4,
+    .box__wrapper5,
+    .box__wrapper6  {
+        width: 160px;
+        height: 200px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239.98px) {
+   header,
+   .we-do-page,
+   .box__page,
+   .tokenization__container,
+   section#lending,
+   section#client__portal,
+   footer{
+       padding: 32px 12px 80px 12px;
+   }
+
+
+    img.demo-img {
+        width: 70%;
+    }
+
+    section#bit__pension {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+   .top-header__section {
+        padding: 58px 0 0 0;
+    }
+
+    section#bit__pension div.positioned__img img {
+        display: none !important;
+    }
+}
